@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, Route, hashHistory, IndexRoute } from 'react-router'
+import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
 import App from './modules/App.jsx'
 import About from './modules/About.jsx'
@@ -9,7 +9,7 @@ import Repo from './modules/Repo.jsx'
 import Home from './modules/Home.jsx'
 
 render((
-    <Router history={hashHistory}>
+    <Router history={browserHistory}>
         <Route path="/" component={App}>
             <IndexRoute component={Home}/>
 
